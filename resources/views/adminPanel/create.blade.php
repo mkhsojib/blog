@@ -3,6 +3,9 @@
 @section('title', 'Add New Blog Post')
     
 @section('content')
+  <div class="row">
+    <a href="{{ URL::to('/') }}">Go to Home</a>
+  </div>
   <h1>Add New Blog Post</h1>
   <div class="col-sm-8 col-sm-offset-2">
     <form action="{{ route('blogs.store') }}" method="post">

@@ -3,6 +3,9 @@
 @section('title', 'Edit Post #' . $post->id)
 
 @section('content')
+  <div class="row">
+    <a href="{{ URL::to('/') }}">Go to Home</a>
+  </div>
   <h1>Edit Post #{{ $post->id }}</h1>
   <div class="col-sm-8 col-sm-offset-2">
     <form action="{{ route('blogs.update', ['id'=>$post->id]) }}" method="post">
