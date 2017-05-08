@@ -16,7 +16,7 @@
   </form>
   
   <div class="row">
-    <a href="http://tutvids.com/laravel/blog/public">Go to Home</a>
+    <a href="{{ URL::to('/') }}">Go to Home</a>
   </div>
   <div id="postContent" class="row">
     <h1>{{ $post->title }}</h1>

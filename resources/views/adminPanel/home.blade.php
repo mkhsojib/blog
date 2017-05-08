@@ -1,9 +1,9 @@
 @extends('layouts.template')
 
-@section('title', 'Blog Admin Panel')
+@section('title', 'Blog Dashboard')
 
 @section('content')
-  <h1>Admin Panel</h1>
+  <h1>Dashboard</h1>
   <a class="btn btn-primary pull-right" href="{{ route('blogs.create') }}">Add New Blog Post</a>
   <br>
   <br>

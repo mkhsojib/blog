@@ -61,7 +61,7 @@
   @yield('content')
   
   <div class="footer text-center" style="margin: 20px 0 60px 0;">
-    <p>&copy; Begin Programming</p>
+    <p>&copy; mkhsojib.com</p>
   </div>
 </div>
 </body>

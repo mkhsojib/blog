@@ -105,7 +105,8 @@
         <br>
         <br>
         <p>Visit Count: {{ $post->visit_count }}</p>
-        <p>Posted Date: {{ date('F d, Y', strtotime($post->created_at)) }} at {{ date('g:ia', strtotime($post->created_at)) }}</p>
+        {{--<p>Posted Date: {{ date('F d, Y', strtotime($post->created_at)) }} at {{ date('g:ia', strtotime($post->created_at)) }}</p>--}}
+          <p>Post Time: {{ $post->created_at->diffForHumans(Carbon\Carbon::now())}}</p>
         <p>Comment Count: {{ $post->comment_count }}</p>
         <a class="btn btn-default pull-right" href="{{ route('blogs.show', ['id'=>$post->id]) }}">View Post</a>
         &nbsp;
