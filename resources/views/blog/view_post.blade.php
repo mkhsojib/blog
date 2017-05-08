@@ -26,7 +26,7 @@
   <div class="row text-center" id="facebookCommentContainer">
     <div class="fb-comments" data-href="{{ Request::url() }}" data-width="800" data-numposts="10"></div>
   </div>
-  
+
   <script>
     let fbCommentCount = document.getElementById('fbCommentCount').getElementsByClassName('fb_comments_count');
 
