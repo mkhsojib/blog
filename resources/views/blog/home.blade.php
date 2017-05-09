@@ -102,7 +102,7 @@
       <div class="well well-lg">
          
         <h3>{{ $post->title }}</h3>
-          {{--<p>{{ Storage::get('file.jpg') }}</p>--}}
+
         <p>{{ $post->body }}</p>
         <br>
         <br>

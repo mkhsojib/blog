@@ -69,7 +69,18 @@ class BlogController extends Controller
             'body' => 'required|unique:blogs,body',
         ]);
 
-        $a = $request->images->store('uploads');
+        if ($request->hasFile('input_img')) {
+            if($request->file('input_img')->isValid()) {
+                try {
+                    $file = $request->file('input_img');
+                    $name = rand(11111, 99999) . '.' . $file->getClientOriginalExtension();
+
+                    $request->file('input_img')->move("uploads", $name);
+                } catch (Illuminate\Filesystem\FileNotFoundException $e) {
+
+                }
+            }
+        }
 
         $blog = new Blog;
 

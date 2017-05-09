@@ -37,7 +37,7 @@
 
       <div class="form-group">
         <label for="exampleInputFile">File input</label>
-        <input type="file" name="images" id="exampleInputFile">
+        <input type="file" name="input_img" id="exampleInputFile">
 
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
